@@ -1,11 +1,11 @@
 package net.badlion.client.mods.render;
 
-import net.badlion.client.events.Event;
-import net.badlion.client.events.EventType;
-import net.badlion.client.events.event.MotionUpdate;
-import net.badlion.client.events.event.RenderGame;
-import net.badlion.client.mods.Mod;
-import net.badlion.client.util.ImageDimension;
+import net.delta.client.events.Event;
+import net.delta.client.events.EventType;
+import net.delta.client.events.event.MotionUpdate;
+import net.delta.client.events.event.RenderGame;
+import net.delta.client.mods.Mod;
+import net.delta.client.util.ImageDimension;
 import net.minecraft.client.gui.Gui;
 
 public class Fullbright extends Mod
