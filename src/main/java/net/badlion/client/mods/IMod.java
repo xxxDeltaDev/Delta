@@ -1,6 +1,6 @@
 package net.badlion.client.mods;
 
-import net.badlion.client.events.Event;
+import net.delta.client.events.Event;
 
 public interface IMod
 {
