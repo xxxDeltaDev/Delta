@@ -1,7 +1,7 @@
 package net.badlion.client.events.event;
 
-import net.badlion.client.events.Event;
-import net.badlion.client.events.EventType;
+import net.delta.client.events.Event;
+import net.delta.client.events.EventType;
 
 public class GUIClickMouse extends Event
 {
