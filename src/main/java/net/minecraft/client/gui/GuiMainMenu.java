@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
 import net.delta.client.Wrapper;
-import net.delta.client.gui.BadlionFontRenderer;
+import net.delta.client.gui.DeltaFontRenderer;
 import net.delta.client.gui.InputField;
 import net.delta.client.gui.mainmenu.CapeMenu;
 import net.delta.client.gui.mainmenu.GuiAccountList;
