@@ -1,12 +1,12 @@
 package net.badlion.client.mods.render;
 
-import net.badlion.client.Wrapper;
-import net.badlion.client.events.Event;
-import net.badlion.client.events.EventType;
-import net.badlion.client.events.event.KeyPress;
-import net.badlion.client.events.event.RenderGame;
-import net.badlion.client.mods.Mod;
-import net.badlion.client.mods.misc.SlideoutAccess;
+import net.delta.client.Wrapper;
+import net.delta.client.events.Event;
+import net.delta.client.events.EventType;
+import net.delta.client.events.event.KeyPress;
+import net.delta.client.events.event.RenderGame;
+import net.delta.client.mods.Mod;
+import net.delta.client.mods.misc.SlideoutAccess;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
 import net.minecraft.client.gui.ScaledResolution;
