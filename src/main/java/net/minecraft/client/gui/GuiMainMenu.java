@@ -10,18 +10,18 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
-import net.badlion.client.Wrapper;
-import net.badlion.client.gui.BadlionFontRenderer;
-import net.badlion.client.gui.InputField;
-import net.badlion.client.gui.mainmenu.CapeMenu;
-import net.badlion.client.gui.mainmenu.GuiAccountList;
-import net.badlion.client.gui.mainmenu.GuiAccountLogin;
-import net.badlion.client.gui.mainmenu.GuiModProfiles;
-import net.badlion.client.gui.mainmenu.GuiTopBar;
-import net.badlion.client.util.ColorUtil;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.OpenGlHelper;
-import net.minecraft.client.renderer.Tessellator;
+import net.delta.client.Wrapper;
+import net.delta.client.gui.BadlionFontRenderer;
+import net.delta.client.gui.InputField;
+import net.delta.client.gui.mainmenu.CapeMenu;
+import net.delta.client.gui.mainmenu.GuiAccountList;
+import net.delta.client.gui.mainmenu.GuiAccountLogin;
+import net.delta.client.gui.mainmenu.GuiModProfiles;
+import net.delta.client.gui.mainmenu.GuiTopBar;
+import net.delta.client.util.ColorUtil;
+import net.delta.client.Minecraft;
+import net.delta.client.renderer.OpenGlHelper;
+import net.delta.client.renderer.Tessellator;
 import net.minecraft.client.renderer.WorldRenderer;
 import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
 import net.minecraft.client.resources.I18n;
@@ -708,9 +708,9 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback
         return this.width;
     }
 
-    public ResourceLocation getBadlionLogo()
+    public ResourceLocation getDeltaLogo()
     {
-        return badlionLogo;
+        return deltaLogo;
     }
 
     public InputField getEmailField()
