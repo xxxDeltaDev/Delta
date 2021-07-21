@@ -1,14 +1,14 @@
 package net.badlion.client.mods;
 
-import net.badlion.client.Wrapper;
-import net.badlion.client.events.Event;
-import net.badlion.client.events.EventType;
-import net.badlion.client.events.event.GUIClickMouse;
-import net.badlion.client.events.event.MotionUpdate;
-import net.badlion.client.gui.slideout.Image;
-import net.badlion.client.gui.slideout.SimpleButton;
-import net.badlion.client.gui.slideout.SlidePage;
-import net.badlion.client.util.ImageDimension;
+import net.delta.client.Wrapper;
+import net.delta.client.events.Event;
+import net.delta.client.events.EventType;
+import net.delta.client.events.event.GUIClickMouse;
+import net.delta.client.events.event.MotionUpdate;
+import net.delta.client.gui.slideout.Image;
+import net.delta.client.gui.slideout.SimpleButton;
+import net.delta.client.gui.slideout.SlidePage;
+import net.delta.client.util.ImageDimension;
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.ResourceLocation;
 
@@ -251,7 +251,7 @@ public class Mod implements IMod
         this.fontOffset = fontOffset;
     }
 
-    public double getFontOffset()
+    public double getFontOffset() 
     {
         return this.fontOffset;
     }
