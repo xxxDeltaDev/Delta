@@ -1,8 +1,8 @@
 package net.badlion.client.mods.render;
 
-import net.badlion.client.Wrapper;
-import net.badlion.client.events.Event;
-import net.badlion.client.mods.Mod;
+import net.delta.client.Wrapper;
+import net.delta.client.events.Event;
+import net.delta.client.mods.Mod;
 import net.badlion.client.mods.render.gui.BoxedCoord;
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.MathHelper;
