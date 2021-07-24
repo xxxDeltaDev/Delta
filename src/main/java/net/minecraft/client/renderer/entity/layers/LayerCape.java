@@ -1,6 +1,6 @@
 package net.minecraft.client.renderer.entity.layers;
 
-import net.badlion.client.manager.CapeManager;
+import net.delta.client.manager.CapeManager;
 import net.minecraft.client.entity.AbstractClientPlayer;
 import net.minecraft.client.renderer.entity.RenderPlayer;
 
