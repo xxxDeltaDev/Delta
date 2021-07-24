@@ -1,15 +1,15 @@
 package net.badlion.client.tweaker;
 
-import net.badlion.client.tweaker.visitors.InventoryEffectVisitor;
-import net.badlion.client.tweaker.visitors.ModelPlayerVisitor;
-import net.badlion.client.tweaker.visitors.RenderGlobalVisitor;
-import net.badlion.client.tweaker.visitors.RenderManagerVisitor;
-import net.badlion.client.tweaker.visitors.enittyrenderer.UpdateCameraVisitor;
-import net.badlion.client.tweaker.visitors.guiingame.RenderGameOverlayVisitor;
-import net.badlion.client.tweaker.visitors.guiingame.RenderPlayerStatsVisitor;
-import net.badlion.client.tweaker.visitors.guiingame.RenderScoreboardVisitor;
-import net.badlion.client.tweaker.visitors.layerarmorbase.CombineTexturesVisitor;
-import net.badlion.client.tweaker.visitors.layerarmorbase.RenderLayerVisitor;
+import net.delta.client.tweaker.visitors.InventoryEffectVisitor;
+import net.delta.client.tweaker.visitors.ModelPlayerVisitor;
+import net.delta.client.tweaker.visitors.RenderGlobalVisitor;
+import net.delta.client.tweaker.visitors.RenderManagerVisitor;
+import net.delta.client.tweaker.visitors.enittyrenderer.UpdateCameraVisitor;
+import net.delta.client.tweaker.visitors.guiingame.RenderGameOverlayVisitor;
+import net.delta.client.tweaker.visitors.guiingame.RenderPlayerStatsVisitor;
+import net.delta.client.tweaker.visitors.guiingame.RenderScoreboardVisitor;
+import net.delta.client.tweaker.visitors.layerarmorbase.CombineTexturesVisitor;
+import net.delta.client.tweaker.visitors.layerarmorbase.RenderLayerVisitor;
 import net.minecraft.launchwrapper.IClassTransformer;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassVisitor;
@@ -18,7 +18,7 @@ import org.objectweb.asm.FieldVisitor;
 import org.objectweb.asm.Label;
 import org.objectweb.asm.MethodVisitor;
 
-public class BadlionTransformer implements IClassTransformer
+public class DeltaTransformer implements IClassTransformer
 {
     public byte[] transform(String name, String transformedName, byte[] bytes)
     {
@@ -31,7 +31,7 @@ public class BadlionTransformer implements IClassTransformer
             System.out.println("Found Class " + name);
             ClassReader classreader6 = new ClassReader(bytes);
             ClassWriter classwriter6 = new ClassWriter(1);
-            BadlionTransformer.GuiIngameClassVisitor badliontransformer$guiingameclassvisitor = new BadlionTransformer.GuiIngameClassVisitor(262144, classwriter6);
+            DeltaTransformer.GuiIngameClassVisitor badliontransformer$guiingameclassvisitor = new BadlionTransformer.GuiIngameClassVisitor(262144, classwriter6);
             classreader6.accept(badliontransformer$guiingameclassvisitor, 0);
             return classwriter6.toByteArray();
         }
