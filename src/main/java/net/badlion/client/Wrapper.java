@@ -27,21 +27,21 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import javax.swing.JOptionPane;
 
-import net.badlion.client.gui.BadlionFontRenderer;
-import net.badlion.client.gui.BaseUIRenderer;
-import net.badlion.client.manager.CapeManager;
-import net.badlion.client.manager.ModProfileManager;
-import net.badlion.client.mods.Mod;
-import net.badlion.client.mods.ModProfile;
-import net.badlion.client.mods.misc.LegacyAnimations;
-import net.badlion.client.mods.render.RenderMod;
-import net.badlion.client.util.BlTextureManager;
-import net.badlion.client.util.CTOSWorker;
-import net.badlion.client.util.ColorHandler;
-import net.badlion.client.util.EnumAdapterFactory;
-import net.badlion.client.util.HashIndex;
-import net.badlion.client.util.PingWorker;
-import net.badlion.client.util.STOCWorker;
+import net.delta.client.gui.DeltaFontRenderer;
+import net.delta.client.gui.BaseUIRenderer;
+import net.delta.client.manager.CapeManager;
+import net.delta.client.manager.ModProfileManager;
+import net.delta.client.mods.Mod;
+import net.delta.client.mods.ModProfile;
+import net.delta.client.mods.misc.LegacyAnimations;
+import net.delta.client.mods.render.RenderMod;
+import net.delta.client.util.BlTextureManager;
+import net.delta.client.util.CTOSWorker;
+import net.delta.client.util.ColorHandler;
+import net.delta.client.util.EnumAdapterFactory;
+import net.delta.client.util.HashIndex;
+import net.delta.client.util.PingWorker;
+import net.delta.client.util.STOCWorker;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.ScaledResolution;
 import net.minecraft.client.multiplayer.GuiConnecting;
@@ -72,7 +72,7 @@ public class Wrapper {
     private boolean clearGlass;
     public String currentIp;
     private ColorHandler colorHandler;
-    private BadlionFontRenderer badlionFontRenderer;
+    private DeltaFontRenderer deltaFontRenderer;
     private boolean debugEnabled = false;
     private String currentConnection;
     private boolean edit;
@@ -88,7 +88,7 @@ public class Wrapper {
     private PingWorker eu;
     private Wrapper.Region region;
     private static final String gt = "1.2.0b live client";
-    private static String version = "2.0.0-v-beta";
+    private static String version = "BETA";
     private static int jsonVersion = 15;
     private ModProfileManager modProfileManager;
     private CapeManager capeManager;
@@ -201,9 +201,9 @@ public class Wrapper {
         this.colorHandler = new ColorHandler();
         (new Thread(this.ctosWorker)).start();
         (new Thread(this.stocWorker)).start();
-        this.na = new PingWorker("na.badlion.net:25565");
-        this.eu = new PingWorker("eu.badlion.net:25565");
-        this.sa = new PingWorker("sa.badlion.net:25565");
+        this.na = new PingWorker("mc.gamecraft.gq:25565");
+        this.eu = new PingWorker("mc.gamecraft.gq:25565");
+        this.sa = new PingWorker("mc.gamecraft.gq:25565");
         this.na.setRunOnce(true);
         this.eu.setRunOnce(true);
         this.sa.setRunOnce(true);
@@ -308,8 +308,8 @@ public class Wrapper {
 
     public native String sendInitialHeartbeat(String var1, int var2);
 
-    public int isServerBACEnabled(String ip, int port) {
-        return this.doesServerHaveBACEnabled(ip, port);
+    public int isServerACEnabled(String ip, int port) {
+        return this.doesServerHaveACEnabled(ip, port);
     }
 
     public String getPlayerUUID() {
