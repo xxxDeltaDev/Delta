@@ -35,8 +35,8 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.Executors;
 import java.util.concurrent.FutureTask;
 import javax.imageio.ImageIO;
-import net.badlion.client.Wrapper;
-import net.badlion.client.events.event.ClickMouse;
+import net.delta.client.Wrapper;
+import net.delta.client.events.event.ClickMouse;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.audio.MusicTicker;
@@ -474,7 +474,7 @@ public class Minecraft implements IThreadListener, IPlayerUsage
             this.displayHeight = this.gameSettings.overrideHeight;
         }
 
-        Display.setTitle("Badlion Minecraft Client v" + Wrapper.getVersion());
+        Display.setTitle("Delta Minecraft Client v" + Wrapper.getVersion());
         logger.info("LWJGL Version: " + Sys.getVersion());
         this.setWindowIcon();
         this.setInitialDisplayMode();
