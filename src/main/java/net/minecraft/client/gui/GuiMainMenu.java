@@ -67,9 +67,9 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback
     private String openGLWarningLink;
     private static final ResourceLocation minecraftTitleTextureHd = new ResourceLocation("textures/menu/home/minecraft-logo.png");
     private static final ResourceLocation splashTexts = new ResourceLocation("texts/splashes.txt");
-    private static final ResourceLocation badlionClientHeader = new ResourceLocation("textures/menu/home/bl-client-logo.png");
-    private static final ResourceLocation badlionClientLogo = new ResourceLocation("textures/gui/badlion-client-logo.png");
-    public static final ResourceLocation badlionLogo = new ResourceLocation("textures/gui/badlion-logo-large.png");
+    private static final ResourceLocation deltaClientHeader = new ResourceLocation("textures/menu/home/delta-client-logo.png");
+    private static final ResourceLocation deltaClientLogo = new ResourceLocation("textures/gui/delta-client-logo.png");
+    public static final ResourceLocation deltaLogo = new ResourceLocation("textures/gui/delta-logo-large.png");
     public static final String field_96138_a = "Please click " + EnumChatFormatting.UNDERLINE + "here" + EnumChatFormatting.RESET + " for more information.";
     private int field_92024_r;
     private int field_92023_s;
